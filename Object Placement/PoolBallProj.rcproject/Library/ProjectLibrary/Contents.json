@@ -1,0 +1,62 @@
+[
+  {
+    "libraryIdentifier" : "e5659b0bf90d25f8d9c4c8174241acaa",
+    "format" : "model",
+    "displayName" : "ball14.usdz"
+  },
+  {
+    "libraryIdentifier" : "d78d182358734e47ac32a63b467674e9",
+    "format" : "model",
+    "displayName" : "focus_plane.usdz"
+  },
+  {
+    "libraryIdentifier" : "df35c6ab5babab5f044f012d09e5eb6d",
+    "format" : "model",
+    "displayName" : "focus_plane.usdz"
+  },
+  {
+    "libraryIdentifier" : "a7c98adf1a04a3938fbaa42ca357ad1b",
+    "format" : "model",
+    "displayName" : "focus_plane.usdz"
+  },
+  {
+    "libraryIdentifier" : "ada679d48b666fec99c50ed68ada9c7c",
+    "format" : "model",
+    "displayName" : "FootballField.usdz"
+  },
+  {
+    "libraryIdentifier" : "2cc0ff2c6e902a247aabceee004ee884",
+    "format" : "image",
+    "displayName" : "Focus_Circle.png"
+  },
+  {
+    "libraryIdentifier" : "048449331239a864b623b546528567dd",
+    "format" : "image",
+    "displayName" : "hand.png"
+  },
+  {
+    "libraryIdentifier" : "ba904f59e68ad27bad0d35a3c59063a6",
+    "format" : "image",
+    "displayName" : "iPad_Pro.png"
+  },
+  {
+    "libraryIdentifier" : "e06612cb2df733ab8e65a48db1cf6f7e",
+    "format" : "image",
+    "displayName" : "Flower 3.jpeg"
+  },
+  {
+    "libraryIdentifier" : "8e9ca3987b876dbb929dbdb37f53fc38",
+    "format" : "image",
+    "displayName" : "Focus_Circle2.png"
+  },
+  {
+    "libraryIdentifier" : "75c4821a412e2760b254be7066088d5c",
+    "format" : "image",
+    "displayName" : "Focus_Circle3.png"
+  },
+  {
+    "libraryIdentifier" : "ec3e4983ab59b6dd96fd66281e84c27b",
+    "format" : "image",
+    "displayName" : "Focus_Circle_No_Surface.png"
+  }
+]

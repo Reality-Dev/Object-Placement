@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GpZ-2E-nq5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Transition View Controller-->
+        <scene sceneID="tMU-af-Crk">
+            <objects>
+                <viewController storyboardIdentifier="transitionViewController" id="GpZ-2E-nq5" customClass="TransitionViewController" customModule="Hello_Augmented_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wm7-3u-stT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wjh-7y-eAF" customClass="foreground" customModule="Hello_Augmented_World" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Face_Logo2" translatesAutoresizingMaskIntoConstraints="NO" id="swS-9I-lzV" customClass="foreground" customModule="Hello_Augmented_World" customModuleProvider="target">
+                                <rect key="frame" x="10" y="251" width="394" height="394"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="MU8-qp-Jq3"/>
+                                    <constraint firstAttribute="height" constant="394" id="vMB-rn-dat"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="20o-Di-wjc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="swS-9I-lzV" firstAttribute="centerY" secondItem="wm7-3u-stT" secondAttribute="centerY" id="Dex-CO-B9V"/>
+                            <constraint firstItem="swS-9I-lzV" firstAttribute="centerX" secondItem="wm7-3u-stT" secondAttribute="centerX" id="N6Y-cI-U8k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aTs-bi-u98"/>
+                    <connections>
+                        <outlet property="background" destination="Wjh-7y-eAF" id="WSS-hF-jBA"/>
+                        <outlet property="faceLogo" destination="swS-9I-lzV" id="T5z-yV-xww"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toARView" id="Tck-qb-IBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCp-fH-pr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-678.26086956521749" y="123.88392857142857"/>
+        </scene>
+        <!--ARView-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ARView" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="Hello_Augmented_World" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eZT-iO-sAl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhQ-BY-aJB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VkX-1e-rrf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zLF-s6-4DU"/>
+                    <connections>
+                        <outlet property="arView" destination="ZhQ-BY-aJB" id="Vvb-Sa-x16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308.69565217391306" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Face_Logo2" width="780" height="780"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
