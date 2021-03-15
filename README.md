@@ -1,6 +1,6 @@
 # Object-Placement
 
-![CollisionFilters Example 1](media/CollisionFilters.gif)
+![Object-Placement Example 1](media/example.gif)
 
 Places objects in the scene with a fade in similar to AR Quick Look.
 
